@@ -1,0 +1,33 @@
+Q1:
+https://github.com/XZPshaw
+
+Q2:
+The version of requests lilbrary installed on the system is 2.25.1
+
+Q3:
+The version requests library installed in the virtualenv is 2.26.0
+
+Q4:
+The version of requests library in virtual environment and not virtual environment are not the same.
+This is because the virtual environment has its own installed python packages which is independent from the local machine.  
+
+Q5:
+status code 301 is return when runing command "curl -i http://google.com/" because this page is perminantly moved.
+the url "http://www.google.com" must be visited to get a 200 status code.
+
+Q6：
+status code 301 is returned for command "curl -i http://google.com/teapot"
+status code 301 and 418 are both returned for command "curl -iL http://google.com/teapot"
+since the -iL will also visit the redirected url of original url http://google.com/teapot
+
+
+status code 418 is returned for both command "curl -i http://www.google.com/teapot" and "curl -iL http://www.google.com/teapot"
+Because this time they both visited the correct url and there is no longer a redirection
+
+
+Q7:
+The REQUEST_METHOD changed from GET to POST after "-X POST" is used
+-X is used to change the request method when visiting a url and the POST method is used to send data to the visited web server
+
+Q8:
+https://github.com/XZPshaw/CMPUT404LAB1/blob/main/lab1.py
