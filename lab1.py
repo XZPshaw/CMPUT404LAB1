@@ -9,10 +9,9 @@ homepage = requests.get("http://www.google.com/")
 
 '''curl step10'''
 code_url = "https://raw.githubusercontent.com/XZPshaw/CMPUT404LAB1/main/lab1.py"
-# code_url = "https://github.com/XZPshaw/CMPUT404LAB1/blob/main/lab1.py"
 code_file = requests.get(code_url, stream=True)
-
+# print script from github
+print(code_file.text)
+# download and save 
 with open("downloaded_lab1_zepeng.py", "wb") as code:
     code.write(code_file.content)
-
-print(code_file.text)
