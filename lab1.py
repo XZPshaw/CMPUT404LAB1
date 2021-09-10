@@ -15,3 +15,4 @@ code_file = requests.get(code_url, stream=True)
 with open("downloaded_lab1_zepeng.py", "wb") as code:
     code.write(code_file.content)
 
+print(code_file.text)
